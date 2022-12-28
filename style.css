@@ -133,3 +133,10 @@ id */
 }
 
 
+.bg-color{
+    background-color: var(--ow-color);
+}
+
+.li-padding{
+    padding: 2rem;
+}
