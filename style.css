@@ -147,3 +147,15 @@ id */
     cursor: pointer;
     color: white;
 }
+
+#blog-content {
+    max-height: 100px; /* only show 100px of the content */
+    overflow: hidden; /* hide the content that goes beyond the max-height */
+  }
+
+ 
+  li {
+    display: block;
+    padding: 20px; /* add some padding to the li elements */
+    margin: 20px 0; /* add some margin to the top and bottom of the li elements */
+  }  

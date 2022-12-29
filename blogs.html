@@ -35,19 +35,29 @@
     <ul class="no-bullets">
         <li>
             <div class="conatiner--center">
-                <h1>Programmers Meme</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat voluptates pariatur molestiae quasi neque, consequuntur dicta consequatur delectus voluptate illum quas qui maxime beatae ea et labore! Delectus, quasi corrupti.</p>
-                <a class="link link--primary" href="/">see more</a>
+                <h1>A Decade at IBM and a New Journey as a Full Stack Developer</h1>
+                <div id="blog-content">
+                    <p>Hi everyone,</p>
+                    <p>My name is Rahul and I have been working as an Application Developer with IBM for almost a decade. While I have enjoyed my time with the company and learned a lot, I have always felt a desire to take on more challenging projects and expand my skillset.</p>
+                    <p>That's why I have recently decided to make a career change and learn full stack development. I have always been interested in the full spectrum of web development, from the front-end user interface to the back-end server-side logic, and I feel that becoming a full stack developer will allow me to take on more diverse and exciting projects.</p>
+                    <p>I have left my job at IBM and have started learning full stack development through the online platform neoGCamp. I have completed the Mark 9 assignment of Level 0 and am excited to continue my journey through the program.</p>
+                    <p>It is not an easy decision to leave a job that you have been with for a long time, especially in the current climate. But I am confident that this change will be the best decision for my career and personal growth. I am excited to learn new technologies and take on new challenges as a full stack developer.</p>
+                    <p>Thank you for reading, and I hope to share more updates on my journey as a full stack developer in the future.</p>
+                    <p>Best regards,<br>Rahul</p>
+                  </div>
+                  <a id="see-more-link" class="link link--primary" href="#">see more</a>
+                </div>
+                
                 
             </div>
         </li>
         <li>
             <div class="conatiner--center">
-                <h1>Programmers Meme</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat voluptates pariatur molestiae quasi neque, consequuntur dicta consequatur delectus voluptate illum quas qui maxime beatae ea et labore! Delectus, quasi corrupti.</p>
-                <a class="link link--primary" href="/">see more</a>
-                
-            </div>
+                <h1>Learning React: A Beginner's Perspective</h1>
+                <div id="blog-content">
+                    <p>As a new coder, learning to code can be both exciting and challenging. Here are some experiences you may have while learning to code in React:</p>
+                  <a id="see-more-link" class="link link--primary" href="#">see more</a>
+                </div>
         </li>
     </ul>
     <footer class="footer">
@@ -65,7 +75,30 @@
         </ul>
     </footer>
 
+<script>
+const seeMoreLink = document.getElementById('see-more-link');
+const blogContent = document.getElementById('blog-content');
 
+seeMoreLink.addEventListener('click', function(event) {
+  event.preventDefault(); // prevent the link from navigating to the href value
+
+  if (blogContent.style.maxHeight) {
+    // content is currently displayed, so hide it
+    blogContent.style.maxHeight = null;
+    seeMoreLink.textContent = 'see more';
+  } else {
+    // content is currently hidden, so show it
+    blogContent.style.maxHeight = blogContent.scrollHeight + 'px';
+    seeMoreLink.textContent = 'see less';
+  }
+});
+
+
+
+
+
+
+</script>
     
 </body>
 </html>
