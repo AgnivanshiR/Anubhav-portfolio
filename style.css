@@ -140,3 +140,10 @@ id */
 .li-padding{
     padding: 2rem;
 }
+
+
+.link-footer{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
